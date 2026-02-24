@@ -1,4 +1,4 @@
-// Sample job data
+
 let jobs = [
   {id:1, companyName:"Mobile First Corp", position:"React Native Developer", location:"Remote", type:"Full-time", salary:"40k-50k", description:"Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.", status:"All"},
 
@@ -17,10 +17,10 @@ let jobs = [
   {id:8, companyName:"TechCorp Industries", position:"Senior Frontend Developer", location:"San Francisco, CA", type:"Full-time", salary:"40k-50k", description:"We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.", status:"All"}
 ];
 
-// Current selected tab
+
 let currentTab = "All";
 
-// Elements
+
 const jobsContainer = document.getElementById("jobsContainer");
 const tabButtons = document.querySelectorAll(".tab-btn");
 const totalCountEl = document.getElementById("totalCount");
@@ -28,7 +28,7 @@ const interviewCountEl = document.getElementById("interviewCount");
 const rejectedCountEl = document.getElementById("rejectedCount");
 const tabCountEl = document.getElementById("tabCount");
 
-// Render jobs
+
 function renderJobs() {
   jobsContainer.innerHTML = "";
 
@@ -48,11 +48,11 @@ function renderJobs() {
 
   filteredJobs.forEach(job => {
     const card = document.createElement("div");
-    card.className = "bg-gray-50 p-4 rounded shadow flex flex-col justify-between";
+    card.className = "bg-gray-50 p-4 rounded shadow flex flex-col justify-between gap-4";
     card.innerHTML = `
-      <h3 class="font-bold text-lg">${job.position} @ ${job.companyName}</h3>
-      <p class="text-gray-600">${job.location} | ${job.type} | Salary: ${job.salary}</p>
-      <p class="my-2 text-[#323B49]">${job.description}</p>
+      <h3 class="font-bold text-lg text-[#002C5C]">${job.position} @ ${job.companyName}</h3>
+      <p class="text-gray-500">${job.location} | ${job.type} | Salary: ${job.salary}</p>
+      <p class="my-2 text-dark-gray">${job.description}</p>
       <div class="flex gap-2 mt-2">
         <button class="interview-btn border border-green-500 px-2 py-1 bg-white text-green-500 rounded font-semibold" data-id="${job.id}">Interview</button>
         <button class="rejected-btn border border-red-500 px-2 py-1 bg-white text-red-500 font-semibold rounded" data-id="${job.id}">Rejected</button>
@@ -63,14 +63,14 @@ function renderJobs() {
   });
 }
 
-// Update dashboard counts
+
 function updateDashboard() {
   totalCountEl.textContent = jobs.length;
   interviewCountEl.textContent = jobs.filter(j=>j.status==="Interview").length;
   rejectedCountEl.textContent = jobs.filter(j=>j.status==="Rejected").length;
 }
 
-// Handle tab switching
+
 tabButtons.forEach(btn => {
   btn.addEventListener("click", () => {
     currentTab = btn.dataset.tab;
@@ -80,7 +80,7 @@ tabButtons.forEach(btn => {
   });
 });
 
-// Handle buttons (Interview, Rejected, Delete)
+
 jobsContainer.addEventListener("click", e=>{
   const id = Number(e.target.dataset.id);
   const job = jobs.find(j=>j.id===id);
@@ -97,6 +97,6 @@ jobsContainer.addEventListener("click", e=>{
   renderJobs();
 });
 
-// Initial render
+
 updateDashboard();
 renderJobs();
