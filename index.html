@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        *{
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-100 min-h-screen py-[60px] px-6 md:px-8 lg:px-60">
+
+  <!-- Dashboard -->
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold mb-4 text-[#002C5C]">Job Application Tracker</h1>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500">Total</h2>
+        <p id="totalCount" class="text-2xl font-bold text-blue-950">8</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500">Interview</h2>
+        <p id="interviewCount" class="text-2xl font-bold text-green-600">0</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500">Rejected</h2>
+        <p id="rejectedCount" class="text-2xl font-bold text-red-600">0</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <section class="bg-white p-4 rounded shadow mb-6">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-semibold">Available Jobs</h2>
+      <p id="tabCount" class="text-gray-600">8 Jobs</p>
+    </div>
+    <div class="flex gap-4 mb-4">
+      <button class="tab-btn px-4 py-2 bg-blue-500 text-white rounded" data-tab="All">All</button>
+      <button class="tab-btn px-4 py-2 bg-gray-200 rounded" data-tab="Interview">Interview</button>
+      <button class="tab-btn px-4 py-2 bg-gray-200 rounded" data-tab="Rejected">Rejected</button>
+    </div>
+
+    <!-- Job Cards Container -->
+    <div id="jobsContainer" class="grid md:grid-cols-1 lg:grid-cols-1 gap-4">
+      <!-- Cards will be rendered here by JS -->
+    </div>
+  </section>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
