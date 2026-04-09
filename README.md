@@ -6,22 +6,20 @@
 🌐 Live Demo:
 <p>https://job-application-tracker-count.netlify.app/</p>
 
-⚡ Main Technologies
-<p>
-- HTML5 – Semantic structure for content
-- CSS3 / Tailwind CSS / DaisyUI – Modern, responsive, and clean UI
-- JavaScript (ES6+) – Dynamic job filtering, status updates, and interactive features
-</p>
+<h1>⚡ Main Technologies</h1>
+<p>- HTML5 – Semantic structure for content</p>
+<p>- CSS3 / Tailwind CSS / DaisyUI – Modern, responsive, and clean UI</p>
+<p>- JavaScript (ES6+) – Dynamic job filtering, status updates, and interactive features</p>
 
-✨ Key Features
-<p>
-- Dashboard Summary: View total jobs, interviews, and rejections at a glance.
-- Filter Tabs: Quickly filter jobs by All, Interview, or Rejected.
-- Update Status: Mark a job as Interview or Rejected with one click.
-- Delete Jobs: Remove jobs from the list instantly.
-- Responsive Design: Works perfectly on desktop and mobile devices.
-- Dynamic Rendering: Jobs update immediately when status changes using JavaScript.
-</p>
+
+<h1>✨ Key Features</h1>
+<p>- Dashboard Summary: View total jobs, interviews, and rejections at a glance.</p>
+<p>- Filter Tabs: Quickly filter jobs by All, Interview, or Rejected.</p>
+<p>- Update Status: Mark a job as Interview or Rejected with one click.</p>
+<p>- Delete Jobs: Remove jobs from the list instantly.</p>
+<p>- Responsive Design: Works perfectly on desktop and mobile devices.</p>
+<p>- Dynamic Rendering: Jobs update immediately when status changes using JavaScript.</p>
+
 
 📦 Dependencies
 Tailwind CSS
