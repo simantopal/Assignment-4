@@ -1,23 +1,40 @@
-# Assignment-4
-1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+Job Application Tracker
 
-Ans: getElementById এক element দেয়, 
-     getElementsByClassName একাধিক element দেয় (live)
-     querySelector প্রথম match করা element দেয়
-     querySelectorAll সব match করা element দেয় 
 
-2. How do you create and insert a new element into the DOM?
+Job Application Tracker is a web app that helps users manage and track their job applications in one place. Users can see total applications, mark jobs for interview or rejection, and delete jobs they no longer want. The app is fully responsive, interactive, and built with modern web technologies.
 
-Ans: নতুন element তৈরি করতে document.createElement() ব্যবহার করা হয়, তার পর text বা class দেওয়ার জন্য textContent বা className set করা হয়, তারপর DOM এ insert করার জন্য parent element এ appendChild() বা prepend() ব্যবহার করা হয়।
+🌐 Live Demo:
+https://job-application-tracker-count.netlify.app/
 
-3. What is Event Bubbling? And how does it work?
+⚡ Main Technologies
+HTML5 – Semantic structure for content
+CSS3 / Tailwind CSS / DaisyUI – Modern, responsive, and clean UI
+JavaScript (ES6+) – Dynamic job filtering, status updates, and interactive features
 
-Ans: Event Bubbling হলো একটি DOM event behavior যেখানে একটি event প্রথমে সবচেয়ে inner element-এ trigger হয়, তারপর ধীরে parent elements-এর দিকে উপরে propagate করে। অর্থাৎ, যদি একটি child element-এ click হয়, একই event parent element-এও ঘটে, যতক্ষণ না stopPropagation() ব্যবহার করে তা বন্ধ করা হয়।
+✨ Key Features
+Dashboard Summary: View total jobs, interviews, and rejections at a glance.
+Filter Tabs: Quickly filter jobs by All, Interview, or Rejected.
+Update Status: Mark a job as Interview or Rejected with one click.
+Delete Jobs: Remove jobs from the list instantly.
+Responsive Design: Works perfectly on desktop and mobile devices.
+Dynamic Rendering: Jobs update immediately when status changes using JavaScript.
 
-4. What is Event Delegation in JavaScript? Why is it useful?
+📦 Dependencies
+Tailwind CSS
+DaisyUI
+Font Awesome (for icons)
+Google Fonts (Geist font)
 
-Ans: Event Delegation হলো একটি technique যেখানে parent element-এ একবার event listener বসানো হয়, আর child elements-এর events handle করা হয় ওই listener দিয়ে। এটা useful কারণ এতে memory কম লাগে, নতুন dynamically added elements-এর events handle করা যায়
+🚀 How to Run Locally
+Clone the repository:
+git clone <your-repo-link>
 
-5. What is the difference between preventDefault() and stopPropagation() methods?
+Navigate to the project folder:
+cd project-folder
 
-Ans: preventDefault() একটি event-এর default behavior বন্ধ করে, কিন্তু event bubbling চলতে দেয়। আর stopPropagation() event-এর bubbling বা capturing বন্ধ করে, কিন্তু default behavior প্রতিরোধ করে না।
+Open index.html in your browser:
+No build tools required; simply double-click index.html or use a live server extension.
+
+
+<h1>Screenshoot</h1>
+<img width="1488" height="766" alt="image" src="https://github.com/user-attachments/assets/d9cffd68-08d8-4508-8124-eca3c5090062" />
