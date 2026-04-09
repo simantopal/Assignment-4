@@ -1,23 +1,27 @@
-Job Application Tracker
+<h1>Job Application Tracker</h1>
 
 
-Job Application Tracker is a web app that helps users manage and track their job applications in one place. Users can see total applications, mark jobs for interview or rejection, and delete jobs they no longer want. The app is fully responsive, interactive, and built with modern web technologies.
+<p>Job Application Tracker is a web app that helps users manage and track their job applications in one place. Users can see total applications, mark jobs for interview or rejection, and delete jobs they no longer want. The app is fully responsive, interactive, and built with modern web technologies.</p>
 
 🌐 Live Demo:
-https://job-application-tracker-count.netlify.app/
+<p>https://job-application-tracker-count.netlify.app/</p>
 
 ⚡ Main Technologies
-HTML5 – Semantic structure for content
-CSS3 / Tailwind CSS / DaisyUI – Modern, responsive, and clean UI
-JavaScript (ES6+) – Dynamic job filtering, status updates, and interactive features
+<p>
+- HTML5 – Semantic structure for content
+- CSS3 / Tailwind CSS / DaisyUI – Modern, responsive, and clean UI
+- JavaScript (ES6+) – Dynamic job filtering, status updates, and interactive features
+</p>
 
 ✨ Key Features
-Dashboard Summary: View total jobs, interviews, and rejections at a glance.
-Filter Tabs: Quickly filter jobs by All, Interview, or Rejected.
-Update Status: Mark a job as Interview or Rejected with one click.
-Delete Jobs: Remove jobs from the list instantly.
-Responsive Design: Works perfectly on desktop and mobile devices.
-Dynamic Rendering: Jobs update immediately when status changes using JavaScript.
+<p>
+- Dashboard Summary: View total jobs, interviews, and rejections at a glance.
+- Filter Tabs: Quickly filter jobs by All, Interview, or Rejected.
+- Update Status: Mark a job as Interview or Rejected with one click.
+- Delete Jobs: Remove jobs from the list instantly.
+- Responsive Design: Works perfectly on desktop and mobile devices.
+- Dynamic Rendering: Jobs update immediately when status changes using JavaScript.
+</p>
 
 📦 Dependencies
 Tailwind CSS
